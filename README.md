@@ -1,2 +1,2 @@
 # SECURE-TCP-SERVER
-ฺBuilding TCP server *secure
+โปรเจคนี้เป็นการสร้าง tcp server เพื่อแสดงให้เห็นถึงความสามารถของผมเพื่อเอาไปใส่ใน portfilo ในการเข้า ม.เกษตร :D
