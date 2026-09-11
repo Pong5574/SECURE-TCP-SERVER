@@ -54,3 +54,7 @@ connect(socket, server address, address size)
 open_db()
 ^
 เป็น func เปิด database ที่ข้างในเป็นการ รับตัวแปรที่เก็บ db ไว้แล้วนำว่าสั่งเปืดด้วย sqlite3_open() ประกอบไปด้วยชื่อไฟล์ที่ต้องการเปิดหรือสร้างถ้าไม่มีและเมื่อไม่ใช้ db แล้วต้องปิดด้วน sqlite3_close(db)
+
+create_table()
+^
+เป็นการสร้าง table เก็บข้อมูลด้วยคำสั่ง sql คำสั่งที่ใช้คือ 
