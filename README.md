@@ -46,3 +46,11 @@ connect(socket, server address, address size)
 เป็นการเชื่อมต่อไปยังตัว server และตัว server ก้จะรับการเชิ่อมต่อด้วย accept()
 
 มีการรับค่าเป้น username กับ password แล้วทำการส่งไปให้ server ตรวจเช็ค
+
+# database
+
+ผมใช้ db ของ sqlite
+
+open_db()
+^
+เป็น func เปิด database ที่ข้างในเป็นการ รับตัวแปรที่เก็บ db ไว้แล้วนำว่าสั่งเปืดด้วย sqlite3_open() ประกอบไปด้วยชื่อไฟล์ที่ต้องการเปิดหรือสร้างถ้าไม่มีและเมื่อไม่ใช้ db แล้วต้องปิดด้วน sqlite3_close(db)
