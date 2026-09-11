@@ -57,4 +57,12 @@ open_db()
 
 create_table()
 ^
-เป็นการสร้าง table เก็บข้อมูลด้วยคำสั่ง sql คำสั่งที่ใช้คือ 
+เป็นการสร้าง table เก็บข้อมูลด้วยคำสั่ง sql คำสั่งที่ใช้คือ CREATE TABLE IF NOT EXISTS User (Username TEXT UNIQUE NOT NULL, Password TEXT NOT NULL);
+
+CREATE TABLE + User คือสั่งสร้าง table ชื่อ User
+IF NOT EXISTS คือถ้า table ยังไม่ถูกสร้างให้สร้างและถ้ามีการสร้างแล้วก็ไม่ต้องสร้าง
+table ประกอบไปด้วย Username TEXT UNIQUE NOT NULL, Password TEXT NOT NULL
+  * Username, Password คือสมาชิกของ table
+  * TEXT คือประเภทเป็น string หรือตัวอักษร
+  * NOT NULL คือห้ามเป็นค่าว่าง
+  * UNIQUE คือห้ามมีการซ่ำเกิดขึ้น
