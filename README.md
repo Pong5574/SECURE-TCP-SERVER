@@ -35,6 +35,8 @@ accept(socket, client address, address size)
 ^
 เป็นขั้นตอนในการรับ client เชื่อมต่อเข้ามาใน server
 
+และมีการจำลองหรือเรียนแบบการส่งแบบ 3 handshake ระหว่าง client
+
 # client.cpp
 
 ส้วนประกอบหลักจะคล้ายๆกับตัว server.cpp แต่จะไม่มี bind() และ listen() และจะเพิ่ม connect() เข้ามาเพิ่ม
@@ -42,3 +44,5 @@ accept(socket, client address, address size)
 connect(socket, server address, address size)
 ^
 เป็นการเชื่อมต่อไปยังตัว server และตัว server ก้จะรับการเชิ่อมต่อด้วย accept()
+
+มีการรับค่าเป้น username กับ password แล้วทำการส่งไปให้ server ตรวจเช็ค
